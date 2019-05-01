@@ -1,1 +1,1 @@
-# TCC
+# Repositório referente ao Trabalho de Conclusão de Curso na graduação em Engenharia de Software pela Universidade de Brasília no campus Gama. Neste repositório serão encontrados tanto a parte teórica, quanto a parte lógica do sistema Grata - Gerenciamento de Reuniões e Atas.
