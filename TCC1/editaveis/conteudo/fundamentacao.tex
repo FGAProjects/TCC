@@ -95,20 +95,68 @@ Segundo \cite{fowler}, as equipes devem possuir um quadro para registro das ativ
 
 No modelo ágil os requisitos dos clientes podem ser mudados a qualquer momento, e o time de gerência e desenvolvimento devem estar preparados para conversar com o cliente a fim de resolver as alterações de requisitos da melhor maneira possível. Este tipo de pensamento no modelo tradicional é mais difícil de acontecer, pois ao observar a figura \ref{img:fases_do_rup}, é possível notar ao iniciar uma fase, essa mesma fase não é retornada mais tarde, ou seja, no modelo tradicional uma troca de requisitos pode levar ao reinicio do projeto.
 
-Este modelo é mais focado para empresas emergentes, que não são muito rigorosas em seus processos e aceita que mudanças nos requisitos ou na visão do produto são sempre bem vindas, desde que melhore o projeto final. 
+Este modelo é mais focado para empresas emergentes, que não são muito rigorosas em seus processos e aceita que mudanças nos requisitos ou na visão do produto são sempre bem vindas, desde que melhore o projeto final.
 
-% Tendo como premissas estes problemas, e a vontade de facilitar a operação, foram levantados a partir de estudos e dos conhecimentos adquiridos no curso de \imprimircurso uma solução que ajude gerentes e líderes de reuniões nas empresas a desenvolver encontros que sejam mais diretos e objetivos a fim de alcançar seus objetivos. Como estudo de caso foi escolhido o NMIL (Núcleo de Modernização da Informação Legislativa), um setor localizado no Senado Federal Brasileiro.
+\subsection{A Instituição}
 
-% O Senado Federal é uma instituição de âmbito nacional no Brasil, e dentre suas secretárias e setores, se tem o NMIL, o caso de estudo deste trabalho. Neste setor são realizadas reuniões quase que diariamente e a partir destes encontros podem ser gerados projetos para o próprio setor, como também para outras secretárias, então fica a cargo do NMIL realizar toda a tramitação e registrar todas as etapas. Essas informações são gravadas em papeis por vezes perdidos.
+Tendo a justificativa para o projeto no tópico \ref{sec:justificativa}, seguida do problema de pesquisa (\ref{sec:problema_de_pesquisa}) e os objetivos descritos no tópico \ref{sec:objetivos}, se tem a necessidade de escolher alguma empresa que será usada como caso de estudo para o projeto, no caso foi definido o NMIL (Núcleo de Modernização da Informação Legislativa), um setor localizado no Senado Federal Brasileiro.
 
-% O Sistema GRATA, vem oferecer a solução prática para a melhoria do controle das informações e qualidade dos serviços. Tendo como a principal funcionalidade o registro das Atas de reuniões de forma simples e intuitiva, tanto para quem gerencia como para quem participa. Além da automação dos processos essenciais da organização, o sistema fornece relatórios gerenciais e analíticos, que podem ser usados para identificação de pontos de melhoria ou até mesmo para dar visibilidade a questões específicas.
+\subsubsection{Senado Federal}
 
-% \section{Reuniões Improdutivas e Suas Consequências}
+As funções do Senado Federal são exercidas pelos senadores da República, que são eleitos segundo o princípio majoritário para representarem os estados e o Distrito Federal. Cada estado e o Distrito Federal elegem três senadores para um mandato de oito anos. A renovação da representação se dá a cada quatro anos, alternadamente, por um e dois terços. Cada senador é eleito com dois suplentes.
 
-% Na era do conhecimento em que estamos inseridos, reuniões estão cada vez mais presentes em organizações e segundo \cite{allen2016} essas reuniões já ocupam em média 15\% do tempo coletivo da organização. Contudo reuniões mal administradas podem levar ao desperdício de recursos da empresa, mas também a sensação dos participantes que a reunião ainda não terminou.
+A Estrutura Administrativa compreende a formação das unidades do Senado, suas
+atribuições, responsáveis e formas de contato.
 
-% O professor \cite{macleod} estima que 30\% a 60\% do tempo gasto com reuniões é desperdiçado. Gerentes podem passar por volta de 11 horas semanais com reuniões mal sucedidas, completando quase um total de 35 dias úteis ao ano. 71\% dos gerentes que foram pesquisados indicam que reuniões ineficazes os impedem de completar funções básicas em seus trabalhos, segundo \cite{perlow}.
+A Administração tem como ênfase os compromissos com o Parlamento; com excelência na prestação de serviços públicos; com qualidade de vida dos colaboradores; com a igualdade; com a livre disseminação de ideias; com a transparência; com a responsabilidade na utilização
+de recursos públicos; com a ustentabilidade; com a acessibilidade; com a memória do Senado; e com a comunidade. Na figura \ref{img:organograma_senado} pode ser visualizado o organograma organizacional do Senado Federal com suas casas e secretárias.
 
-% \textbf{COLOCAR MAIS SOBRE PROBLEMAS NO TRABALHO QUE NÃO SEJA APENAS O CUSTO}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figuras/organograma_senado.png}
+	\caption{Organograma Senado Federal. Fonte: \cite{organograma_senado}.}
+	\label{img:organograma_senado}
+\end{figure}
 
-% Uma das consequências de serem notadas em uma reunião ineficaz além de participantes dispersos e perdidos, é o custo. Estima-se que empresas gastam em média US \$ 37 bilhões anualmente em reuniões \cite{baer}. O custo real desses encontros impulsionou a \cite{harvard} a criar uma calculadora que ajuda gerentes a calcularem o verdadeiro custo de um encontro. 
+% \subsubsection{NMIL}
+
+% \subsubsubsection{Visão Geral}
+
+% A Comissão Diretora é composta pelo Presidente, dois Vice-Presidentes e quatro
+% Secretários. A composição muda a cada dois anos, correspondentes a uma legislatura. É de responsabilidade da Comissão a direção da casa, designando atividades às unidades que dão suporte.
+
+% Essas unidades são: Secretaria Geral da Mesa (SGM), representante da atividade fim da casa; e Diretoria Geral (DGER), que, representa as atividades meio da casa. As duas contam com secretarias, às quais delegam atividades exigidas pelo Presidente.
+
+% Quando o Presidente da Comissão Diretora necessita de apoio tecnológico, delega esta
+% atividade à SGM, que, ao receber o problema, começa a definir diretrizes estratégicas para a solução do problema. Após o término da definição das diretrizes, encaminha-as à Secretaria de Informação Legislativa (Sinfleg).
+
+% O diretor da Sinfleg atua como Gerente do Projeto, e conta com o apoio da equipe do
+% NMIL na administração do projeto.
+
+% A equipe do NMIL realiza reuniões com as áreas afetadas pelo projeto até conseguir
+% definir todos os requisitos para o produto que será gerado, após a definição, convoca uma reunião com o Gerente para entrega dos requisitos definidos. O Gerente analisa esses requisitos para saber se são viáveis. Caso não sejam, pede ao NMIL novos requisitos e, só após receber requisitos viáveis, aprova a proposta de solução.
+
+% O próximo passo é dado pelo NMIL, convocando reunião com a Secretaria de Tecnologia da Informação (Prodasen). Nesta reunião discute-se os requisitos aprovados e prepara-se o Termo de Abertura do Projeto (TAP). O TAP, deve ser encaminhado pelo NMIL ao Gerente para que este aprove o documento; caso não aprove, pede-se um novo, até que seja aprovado.
+
+% Após o Gerente aprovar o projeto, ele o apresenta ao Secretário Geral da Mesa, que é o representante da SGM, para uma aprovação final. O Secretário Geral da Mesa também pode pedir um novo projeto, mas se não for o caso, apenas o autoriza.
+
+% Dada a aprovação do Secretário Geral da Mesa, a equipe do Prodasen, responsável pela
+% construção do produto, dá início à construção do produto, fazendo as entregas de ambiente de homologação (definidas no TAP) ao NMIL, a fim de que este realize testes. Se forem encontrados erros, estes são listados e repassados ao Prodasen para que sejam reparados. Quando não há mais erros, o NMIL dá sua aprovação do produto. Em seguida o Prodasen termina sua parte do projeto e entrega o produto finalizado ao NMIL. O NMIL encaminha o produto ao Gerente que autoriza o produto e apresenta-o ao Secretário Geral da Mesa.
+
+% O Secretário Geral da Mesa, após receber o produto, pode solicitar alterações ao NMIL,
+% que em seguida encaminha esta solicitação ao Prodasen. A equipe do Prodasen responsável pelo produto faz as alterações necessárias o encaminha de volta ao NMIL, passando pelo processo de teste e aprovação novamente até que o Secretário Geral da Mesa autorize a implantação. Quando o Secretário Geral da Mesa autorizar a implantação, cabe ao NMIL apresentar
+% aos usuários o novo Sistema ou as atualizações em sistemas já existentes.
+
+% \textbf{COLOCAR O MAPIAMENTO DOS PROCESSOS}
+
+% \subsubsubsection{Visão Específica}
+
+% A área a ser envolvida no processo de análise será o Núcleo de Modernização da
+% Informação Legislativa.
+
+% Ao NMIL compete planejar, supervisionar e controlar as atividades de modernização do
+% processo legislativo, de acordo com a Política de Gestão do Processo Legislativo Eletrônico, em articulação com o órgão responsável pela tecnologia da informação no Senado Federal; participar da definição dos parâmetros técnicos para produção, tramitação, uso, avaliação e armazenamento de documentos eletrônicos do Processo Legislativo, em conformidade com a
+% Política Geral de Indexação, Classificação e Catalogação do Senado Federal; definir normas e regulamentos relacionados ao uso dos bancos de dados e sistemas legislativos do Senado Federal e do Congresso Nacional; propor o aprimoramento dos processos de trabalho existentes; manter a documentação relativa aos procedimentos internos e processos de trabalho dos Órgãos da Secretaria Geral da Mesa; supervisionar o controle da qualidade dos registros nos bancos de dados e nos sistemas legislativos; informar às áreas alimentadoras dos sistemas quanto à existência de erros e inconsistências nos registros efetuados; propor a adoção de termos controlados no âmbito do processo legislativo eletrônico; e executar atividades correlatas.
+
+% A equipe do NMIL realiza diversas reuniões com áreas que são afetadas pelos projetos
+% que geram ou modificam sistemas de  informação dentro da SGM. Estas reuniões têm por objetivo identificar os problemas, debater os problemas identificados, e chegar à uma solução, colhendo os requisitos e passando por meio de tíquete para a área responsável pelo desenvolvimento e manutenção do sistema de informação.
