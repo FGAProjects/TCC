@@ -4,13 +4,13 @@
 \section{Apresentação do Tema}
 \label{sec:apresentacao}
 
-Um dos instrumentos mais fundamentais e que são cada vez mais crescentes na vida organizacional de uma empresa são as reuniões. Segundo \cite{allen2016}, já se gastam até 15\% do tempo coletivo da organização com reuniões. 
+Um dos instrumentos mais fundamentais e que são cada vez mais crescentes na vida organizacional de uma empresa são as reuniões. Segundo \cite{allen2016}, já se gastam até 15\% do tempo coletivo da organização com reuniões.
 
-Encontros institucionais que não são produtivas e sem sentido, é o que \cite{davidgrady} chama de "Síndrome de Aceitação Sem Sentido"(MAS). David define o MAS como "um reflexo involuntário em que uma pessoa aceita um convite de reunião sem sequer saber o porquê. Uma doença comum entre o escritório e trabalhadores em todo mundo". Atividades que deveriam ser simples e rápidas se tornam complicadas com várias reuniões para a execução completa delas. Reuniões não são nenhum ponto de prazer entre dentro de uma instituição, contudo se os próprios funcionários não conseguem ver o sentido da reunião e os tópicos abordados, mostra que a empresa como um todo está fadada ao fracasso. 
+Encontros institucionais que não são produtivas e sem sentido, é o que \cite{davidgrady} chama de "Síndrome de Aceitação Sem Sentido"(MAS). David define o MAS como "um reflexo involuntário em que uma pessoa aceita um convite de reunião sem sequer saber o porquê. Uma doença comum entre o escritório e trabalhadores em todo mundo". Atividades que deveriam ser simples e rápidas se tornam complicadas com várias reuniões para a execução completa delas. Reuniões não são nenhum ponto de prazer entre dentro de uma instituição, contudo se os próprios funcionários não conseguem ver o sentido da reunião e os tópicos abordados, mostra que a empresa como um todo está fadada ao fracasso.
 
 Nesse viés, reuniões é um dos meios usados para programar uma atividade, reunir pessoas em busca de uma solução relacionada ao problema X. Composta por vários encontros sem tópicos e objetivos específicos, sem \textit{feedbacks} aos gerentes e sem atas sobre o que foi discutido, as reuniões infelizmente se tornam um problema para gerentes e seus funcionários para as instituições. Problemas como estes podem ser pela falta de investimento disponível para aplicação na área tecnológica ou até mesmo pela priorização de outras necessidades.
 
-Este trabalho visa propor uma solução de \textit{software} para auxiliar a condução de reuniões, utilizando dos conhecimentos adquiridos no curso de \imprimircurso para o desenvolvimento de uma solução que se adeque às reais necessidades empregadas aos gerentes dos projetos organizacionais. 
+Este trabalho visa propor uma solução de \textit{software} para auxiliar a condução de reuniões, utilizando dos conhecimentos adquiridos no curso de \imprimircurso para o desenvolvimento de uma solução que se adeque às reais necessidades empregadas aos gerentes dos projetos organizacionais.
 
 \section{Justificativa}
 \label{sec:justificativa}
@@ -31,7 +31,7 @@ Nessa viés e utilizando a justificativa desenvolvida no tópico \ref{sec:justif
 
 A metodologia abordada neste trabalho teve sua escolha baseada após a realização de pesquisas comparativas entre metodologias tradicionais como o \cite{pmbok} e a metodologia ágil de \textit{software}.
 
-Por conta de um conhecimentos maior sobre a metodologia e com entregas frequentes em menos tempo, a metodologia escolhida para este projeto no desenvolvimento do sistema foi a metodologia ágil, juntamente com algumas práticas do \textit{Scrum} e baseado nos valores do \textit{Lean Software Development}.  
+Por conta de um conhecimentos maior sobre a metodologia e com entregas frequentes em menos tempo, a metodologia escolhida para este projeto no desenvolvimento do sistema foi a metodologia ágil, juntamente com algumas práticas do \textit{Scrum} e baseado nos valores do \textit{Lean Software Development}.
 
 \subsection{Requisitos}
 \label{sec:requisitos_introducao}
@@ -50,7 +50,7 @@ Os requisitos funcionais descreve o que o sistema deve de fato ser. Requisitos f
 \subsubsection{Requisitos Não-Funcionais}
 \label{sec:requisitos_nao_funcionais_introducao}
 
-Requisitos não-funcionais são requisitos que são relacionados as propriedades do sistema como confiabilidade, tempo de espera, desempenho, segurança e até restrições do sistema. Requisitos não-funcionais podem possui tanta relevância quanto os requisitos funcionais, pois em uma reunião de levantamento de requisitos, o cliente sonha o mundo e não está atento se os recursos os próprios recursos e os recursos da emprega conseguem atender ao requisito. Um requisito não-funcional não atendido pode inclusive inutilizar um projeto. Exemplo disso é caso um sistema de uma aeronave não consiga atingir a confiabilidade necessária, não será dado o certificado de segurança para operar, sendo assim a aeronave não poderá voar. 
+Requisitos não-funcionais são requisitos que são relacionados as propriedades do sistema como confiabilidade, tempo de espera, desempenho, segurança e até restrições do sistema. Requisitos não-funcionais podem possui tanta relevância quanto os requisitos funcionais, pois em uma reunião de levantamento de requisitos, o cliente sonha o mundo e não está atento se os recursos os próprios recursos e os recursos da emprega conseguem atender ao requisito. Um requisito não-funcional não atendido pode inclusive inutilizar um projeto. Exemplo disso é caso um sistema de uma aeronave não consiga atingir a confiabilidade necessária, não será dado o certificado de segurança para operar, sendo assim a aeronave não poderá voar.
 
 \subsection{Processo de Desenvolvimento de Software}
 
@@ -62,19 +62,10 @@ Neste trabalho, foram definidas as principais atividades a serem realizadas para
     \item Especificação do \textit{software}: funcionalidades e restrições do \textit{software};
     \item Projeto e implementação do \textit{software}: as especificações que o \textit{software} deve atender;
     \item Validação de \textit{software}: para que atenda as expectativas do cliente, o \textit{software} deve ser validado pelo mesmo;
-    \item Evolução do \textit{software}: o \textit{software} deve ser capaz de ser extensível a mudanças, tendo assim seu código aberto.    
+    \item Evolução do \textit{software}: o \textit{software} deve ser capaz de ser extensível a mudanças, tendo assim seu código aberto.
 \end{itemize}
 
 É nessa fase que são definidas a arquitetura e a linguagem de \textit{software}.
-
-\subsection{Arquitetura de Software}
-
-A arquitetura de \textit{software} é como o sistema deve ser organizado com a estrutura geral do projeto. A arquitetura possui um valor alto dentro da construção de um \textit{software}, pois nela se tem o elo entre o projeto e a engenharia de requisitos. Possui o dever identificar os principais componentes estruturais no sistema e o relacionamento entre eles. Neste projeto a arquitetura é o MVC \textit{(model-view-controller)}.
-
-\subsubsection{Model-View-Controller}
-\label{sec:mvc}
-
-O padrão arquitetural MVC é responsável de responsabilidades em camadas. A primeira é \textit{Model}(modelo), que é responsável pela manipulação de dados, ou seja, leitura, escrita de dados e também suas validações é de responsabilidade da Model. A segunda camada é a \textit{View}(visão), que possui a responsabilidade de interação com o usuário. Por último se tem a \textit{Controller}(controladora), responsável por receber as aquisições do usuário. A controller também tem o dever de disponibilizar os dados para a \textit{view} e assim ocorrer a interação com o usuário.
 
 \subsection{Linguagem de Software}
 
@@ -84,21 +75,20 @@ Linguagens de \textit{software}, como também podem ser chamadas, são divididas
 
 \subsubsection{Front-end}
 
-A programação de um \textit{software} pelo ponto de vista do \textit{front-end} é a visão final do usuário com o sistema. \textit{Front-end} é a \textit{View} do MVC, como explicado no tópico \ref{sec:mvc}. Existem diversos tipos de \textit{frameworks} que auxiliam os desenvolvedores a trabalhar com essa frente, como:
+A programação de um \textit{software} pelo ponto de vista do \textit{front-end} é a visão final do usuário com o sistema. \textit{Front-end} é a responsável pela interação do usuário com o sistema e essa interação é dada a partir de telas/páginas. Existem diversos tipos de \textit{frameworks} que auxiliam os desenvolvedores a trabalhar com essa frente, como:
 
 \begin{itemize}
     \item \textit{Bootstrap
     \item Materialize
-    \item Material UI
+    \item React
     \item Angular 4}
 \end{itemize}
 
-A linguagem \textit{front-end} escolhida para este projeto, foi a \textit{Angular 4}, pois além de facilitar o desenvolvimento e interação com usuário final, é uma das mais utilizadas ao redor do mundo, então é facilita uma manutenção futura do \textit{software}.
+A linguagem \textit{front-end} escolhida para este projeto, foi o \textit{React}, pois além de facilitar o desenvolvimento e interação com usuário final, é uma das mais utilizadas ao redor do mundo, então é facilita uma manutenção futura do \textit{software}.
 
 \subsubsection{Back-end}
 
-A programação \textit{back-end} possui as responsabilidades da \textit{model} e \textit{controller} no padrão arquitetural MVC. Em conjunto o \textit{Angular 4}, que é a linguagem \textit{front-end} deste projeto, a \textit{back-end} possui o dever de tratar os dados, valida-los e fomenta-los
-a visão do usuário.
+A programação \textit{back-end} possui as responsabilidades de receber os dados pelo \textit{React}, que é o \textit{front-end} deste projeto, possui o dever de tratar os dados, valida-los e fomentá-los a visão do usuário.
 
 Existem diversas linguagens \textit{back-end} que auxiliam os desenvolvedores a trabalhar em uma linguagem que o computador entende, como:
 
@@ -110,6 +100,37 @@ Existem diversas linguagens \textit{back-end} que auxiliam os desenvolvedores a 
 \end{itemize}
 
 A linguagem \textit{back-end} escolhida para este projeto, foi a \textit{Python Django-Rest}, pois tem uma ótima conexão com a linguagem \textit{front-end}, e por ser muito utilizada, possibilita assim uma manutenção futura.
+
+\subsection{Arquitetura de Software}
+
+A arquitetura de \textit{software} é como o sistema deve ser organizado com a estrutura geral do projeto. A arquitetura possui um valor alto dentro da construção de um \textit{software}, pois nela se tem o elo entre o projeto e a engenharia de requisitos. Possui o dever identificar os principais componentes estruturais no sistema e o relacionamento entre eles. Neste projeto a arquitetura adotada é uma adaptação ao padrão arquitetural MVC \textit{(model-view-controller)}.
+
+\subsubsection{Model-View-Controller}
+\label{sec:mvc}
+
+O padrão arquitetural MVC é responsável de responsabilidades em camadas. A primeira é \textit{Model}(modelo), que é responsável pela manipulação de dados, ou seja, leitura, escrita de dados e também suas validações é de responsabilidade da Model. A segunda camada é a \textit{View}(visão), que possui a responsabilidade de interação com o usuário. Por último se tem a \textit{Controller}(controladora), responsável por receber as aquisições do usuário. A controller também tem o dever de disponibilizar os dados para a \textit{view} e assim ocorrer a interação com o usuário.
+
+\subsubsection{Arquitetura do Projeto}
+
+Neste projeto é feita uma adaptação ao padrão MVC, por conta da escolha da linguagem \textit{front-end}. O \textit{React} possui um padrão arquitetural diferente, chamado de arquitetura de componentes/microserviços. Esse padrão possui semelhanças ao MVC, e o que será utilizado dele será a parte da \textit{View}. Enquanto a linguagem \textit{back-end} é responsável por trabalhar os dados provindos do \textit{front-end} e oferecer um retorno a ele. 
+
+A seguir será mostrado como funciona separadamente o \textit{React},relacionado ao \textit{front-end} e a \textit{View}, enquanto o \textit{Python Django-Rest} é responsável pelo \textit{back-end}, \textit{model} e \textit{controller}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/diagrama_react.png}
+	\caption{Diagrama React/Microsserviços}
+	\label{img:diagrama_react}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/django_rest.png}
+	\caption{Diagrama Django REST Framework}
+	\label{img:diagrama_rest}
+\end{figure}
+
+
 
 \section{Objetivos}
 \label{sec:objetivos}
