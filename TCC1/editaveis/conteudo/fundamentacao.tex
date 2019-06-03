@@ -38,6 +38,7 @@ Este tipo de gerenciamento de projeto é mais utilizado em empresas já consolid
 \end{figure}
 
 \subsection{Modelo Ágil}
+\label{sec:modelo_agil}
 
 Em contraposição ao modelo tradicional, surte o manifesto ágil como uma reação contra o processo burocrático presente no modelo tradicional, que possuem por característica atividades sequências em modelo cascata. Segundo a \cite{chaos} apenas 16,2\% dos projetos entregues por companhias americanas foram entregues respeitando prazos, custos previamente acordados e objetivos determinados. Segundo a própria \cite{chaos}, as principais causas destes problemas estavam relacionadas com o modelo sequencial tradicional.
 
@@ -60,7 +61,14 @@ Os principais conceitos do manifesto ágil são:
 	\item Resposta rápida a mudanças ao invés de seguir planos pré-estabelecidos.
 \end{itemize}
 
-Uma das boas práticas adotadas ao modelo ágil é o SCRUM. O SCRUM, se refere ao jogo \textit{Rugby}, que é a ação dos jogadores se organizarem em círculo para planejar a próxima jogada. Um dos principais pontos de vista do SCRUM é mostrar um projeto com pequenos ciclos, aumentando as iterações entre os participantes, mas com visão a longo prazo.
+No modelo ágil os requisitos dos clientes podem ser mudados a qualquer momento, e o time de gerência e desenvolvimento devem estar preparados para conversar com o cliente a fim de resolver as alterações de requisitos da melhor maneira possível. Este tipo de pensamento no modelo tradicional é mais difícil de acontecer, pois ao observar a figura \ref{img:fases_do_rup}, é possível notar ao iniciar uma fase, essa mesma fase não é retornada mais tarde, ou seja, no modelo tradicional uma troca de requisitos pode levar ao reinicio do projeto.
+
+Este modelo é mais focado para empresas emergentes, que não são muito rigorosas em seus processos e aceita que mudanças nos requisitos ou na visão do produto são sempre bem vindas, desde que melhore o projeto final.
+
+\subsubsection{Scrum}
+\label{sec:scrum}
+
+Uma das boas práticas adotadas ao modelo ágil é o \textit{Scrum}. O \textit{Scrum}, é um \textit{framework} que se refere ao jogo \textit{Rugby}, que é a ação dos jogadores se organizarem em círculo para planejar a próxima jogada. Um dos principais pontos de vista do \textit{Srum} é mostrar um projeto com pequenos ciclos, aumentando as iterações entre os participantes, mas com visão a longo prazo.
 
 O ciclo de vida pode ser visto na figura \ref{img:ciclo_de_vida_scrum}:
 
@@ -71,11 +79,12 @@ O ciclo de vida pode ser visto na figura \ref{img:ciclo_de_vida_scrum}:
 	\label{img:ciclo_de_vida_scrum}
 \end{figure}
 
-Como visto na figura \ref{img:ciclo_de_vida_scrum}, o SCRUM é um ciclo progressivo de várias iterações bem definidas, denominadas \textit{Sprints}. As \textit{Sprints} podem ter duração de uma a quatro semanas. Antes de cada \textit{Sprint}, deve ser realizada a reunião de planejamento da \textit{Sprint}, chamada de \textit{Sprint Planning Meeting}, na qual os desenvolvedores tem contato com o \textit{Product Owner}, que possui o dever de priorizar as atividades, seleciona-las e estimar as tarefas que a equipe pode desenvolver na próxima \textit{Sprint}.
+Como visto na figura \ref{img:ciclo_de_vida_scrum}, o \textit{Scrum} é um ciclo progressivo de várias iterações bem definidas, denominadas \textit{Sprints}. As \textit{Sprints} podem ter duração de uma a quatro semanas. Antes de cada \textit{Sprint}, deve ser realizada a reunião de planejamento da \textit{Sprint}, chamada de \textit{Sprint Planning Meeting}. A \textit{Sprint Planning Meeting} é uma reunião de planjemanto em que o \textit{Product Owner}
+prioriza os itens do \textit{Product Backlog} e a equipe seleciona as atividades que serão implementadas ao longo da \textit{Sprint}. No \textit{Product Backlog} são registradas as funcionalidades que serão implementadas pedidas pelo \textit{Product Backlog}. 
 
 Com o objetivo de saber o progresso de cada equipe dentro da \textit{Sprint}, ocorrem as reuniões diárias, denominadas \textit{Daily Meetings}, que tem duração de no máximo 15 minutos e ocorrem com todos os participantes em pé, respondendo perguntas como: "O que você fez ontem?", "O que você fez hoje?" e "O que você vai fazer amanhã?". 
 
-Ao final de uma \textit{Sprint} é feita uma análise gráfico do progresso do projeto atráves do \textit{Sprint Backlog} durante a \textit{Sprint Review}. Após a \textit{Sprint Review} ocorre a \textit{Sprint Restrospective} que é a análise de experiências que ocorreram durante a \textit{Sprint} sejam boas ou não a fim de melhora-las.
+Ao final de uma \textit{Sprint} é feita uma análise gráfico do progresso do projeto atráves do \textit{Sprint Backlog} durante a \textit{Sprint Review}. Após a \textit{Sprint Review} ocorre a \textit{Sprint Retrospective} que é a análise de experiências que ocorreram durante a \textit{Sprint} sejam boas ou não a fim de melhora-las.
 
 Segundo \cite{fowler}, as equipes devem possuir um quadro para registro das atividades, denominado \textit{Kanban}. O \textit{Kanban} possui o objetivo de auxiliar as equipes em relação ao progresso da \textit{Sprint}, esse quadro pode ser dividido em 4 fases:
 
@@ -93,9 +102,29 @@ Segundo \cite{fowler}, as equipes devem possuir um quadro para registro das ativ
 	\label{img:kanban}
 \end{figure}
 
-No modelo ágil os requisitos dos clientes podem ser mudados a qualquer momento, e o time de gerência e desenvolvimento devem estar preparados para conversar com o cliente a fim de resolver as alterações de requisitos da melhor maneira possível. Este tipo de pensamento no modelo tradicional é mais difícil de acontecer, pois ao observar a figura \ref{img:fases_do_rup}, é possível notar ao iniciar uma fase, essa mesma fase não é retornada mais tarde, ou seja, no modelo tradicional uma troca de requisitos pode levar ao reinicio do projeto.
+O \textit{Scrum} possui seus papeis bem definidos, podendo ser alterados ao longo do desenvolvimento do projeto. Esses papeis podem ser vistos na figura \ref{img:papeis_scrum}.
 
-Este modelo é mais focado para empresas emergentes, que não são muito rigorosas em seus processos e aceita que mudanças nos requisitos ou na visão do produto são sempre bem vindas, desde que melhore o projeto final.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/papeis_scrum.png}
+	\caption{Papeis Scrum. Fonte: \cite{papeis_scrum}.}
+	\label{img:papeis_scrum}
+\end{figure}
+
+Como observado na figura \ref{img:papeis_scrum}, o \textit{Scrum} possui três papeis bem definidos: o \textit{Product Owner}, conhecido como PO, o \textit{Scrum Master} e por fim temos o \textit{Dev Team}. 
+
+\subsubsection{Product Owner}
+
+O \textit{Product Owner}, é o dono do produto. É ele que fornece o conhecimento do negócio em forma de requisitos para a equipe e na forma pratíca são os patrocionadores/clientes do produto. O PO organiza e prioriza o \textit{Product Backlog} (que são os itens que devem ser desenvolvidos), esse papel deve ser assumido por pessoas que sejam boas em se comunicar, pois esse papel é responsável por trabalhar e tirar dúvidas da \textit{Dev Team}.
+
+\subsubsection{Scrum Master}
+
+Ao analisar a figura \ref{img:papeis_scrum}, a figura do \textit{Scrum Master} parece ser superior aos outros papeis, o que não é verdade. O \textit{Scrum Master} possui o dever de ajudar a comunicação entre o PO e o \textit{Dev Team} além de remover todos os impedimentos que estão prejudicando o desenvolvimento, tem a função de auxiliar o amadurecimento da \textit{Dev Team} e promover as cerimônias que o \textit{Scrum} preza, como \textit{Daily Meetings}, \textit{Sprint Review} e \textit{Sprint Retrospective}.
+
+\subsubsection{Dev Team}
+
+Esse papel é voltada para as pessoas que de fato irão desenvolver o produto. O \textit{Dev Team} é auto-organizável e decide entre si como implementar os itens priorizados pelo PO.
+
 
 \section{A Instituição}
 
