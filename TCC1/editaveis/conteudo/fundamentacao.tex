@@ -42,9 +42,9 @@ Este tipo de gerenciamento de projeto é mais utilizado em empresas já consolid
 \subsubsection{Casos de Uso}
 \label{sec:casos_de_uso}
 
-Para o auxilio no desenvolvimento, o RUP utiliza um diagrama conhecido como Casos de Uso. Segundo \cite{casos_de_uso}, este modelo é focado em auxiliar a comunicação entre cliente e analistas, apresentar as principais funcionalidades do sistema com foco no cliente e é muito utilizado na fase de levantamento dos requisitos.
+Os casos de uso é uma das principais características presentes na linguagem de modelagem UML (unified modeling language), ou linguagem modelada unificada. \cite{sommerville} define os objetivos dos casos de uso são de identificar os atores envolvidos e dá o nome ao tipo de interação. Os casos de uso é um diagrama de auto nível, ou seja, de fácil entendimento para o usuário final que possui os objetivos mais amplos de auxiliar a comunicação entre cliente e analistas, e apresentar as principais funcionalidades do sistema com foco no cliente.
 
-Um caso de uso é composto por atores e relacionamentos. Na Figura \ref{img:exemplo_caso_de_uso} é possível visualizar um exemplo de caso de uso:
+Na Figura \ref{img:exemplo_caso_de_uso} é possível visualizar um exemplo de caso de uso:
 
 \begin{figure}[H]
 	\centering
@@ -141,7 +141,7 @@ Ao analisar a figura \ref{img:papeis_scrum}, a figura do \textit{Scrum Master} p
 
 Esse papel é voltada para as pessoas que de fato irão desenvolver o produto. O \textit{Dev Team} é auto-organizável e decide entre si como implementar os itens priorizados pelo PO.
 
-\subsection{Processo de Desenvolvimento de Software}
+\section{Processo de Desenvolvimento de Software}
 \label{sec:processo_de_desenvolvimento_de_software}
 
 Segundo \cite{sommerville}, esse processo pode ser definido como "Um processo de \textit{software} é um conjunto de atividades relacionadas que levam à produção de um produto de \textit{software}."
@@ -172,7 +172,7 @@ A programação de um \textit{software} pelo ponto de vista do \textit{front-end
     \item Angular 4}
 \end{itemize}
 
-\subsection{Back-end}
+\subsubsection{Back-end}
 
 A programação \textit{back-end} possui as responsabilidades de receber os dados pelo \textit{React}, que é o \textit{front-end} deste projeto, possui o dever de tratar os dados, valida-los e fomentá-los a visão do usuário.
 
@@ -185,7 +185,7 @@ Existem diversas linguagens \textit{back-end} que auxiliam os desenvolvedores a 
     \item PHP}
 \end{itemize}
 
-\subsection{Arquitetura de Software}
+\subsubsection{Arquitetura de Software}
 
 A arquitetura de \textit{software} é como o sistema deve ser organizado com a estrutura geral do projeto. A arquitetura possui um valor alto dentro da construção de um \textit{software}, pois nela se tem o elo entre o projeto e a engenharia de requisitos. Possui o dever identificar os principais componentes estruturais no sistema e o relacionamento entre eles.
 
@@ -209,21 +209,23 @@ Requisito não é um termo usado apenas pela \imprimircurso. Há casos em que re
 
 \subsubsection{Elicitação dos Requisitos}
 
-\cite{sommerville} define a elicitação de requisitos como uma fase do projeto onde são extraídas informações do cliente sobre o que ele deseja que seja construído. É a fase em que o profissional de TI entende a necessidade do cliente e o orienta. É o momento de conversa com o usuário, de sentimento sobre o que este espera que seja entregue a ele. Na elicitação de requisitos são percebidas as necessidades do sistema e as características que esse sistema deve ter.
-
-Para este projeto, foram escolhidas as seguites técnicas de elicitação de requisitos:
+\cite{sommerville} define a elicitação de requisitos como uma fase do projeto onde são extraídas informações do cliente sobre o que ele deseja que seja construído. É a fase em que o profissional de TI entende a necessidade do cliente e o orienta. É o momento de conversa com o usuário, de sentimento sobre o que este espera que seja entregue a ele. Na elicitação de requisitos são percebidas as necessidades do sistema e as características que esse sistema deve ter. Dentre todas as técnicas dentro da literatura, foram selecionadas duas como condidatas a serem usadas no projeto:
 
 \begin{itemize}
-    \item JAD - \textit{Joint Application Development}
     \item Entrevista
     \item Observação
 \end{itemize}
 
-\subsubsubsection{JAD - Joint Application Development}
-
 \subsubsubsection{Entrevista}
 
+Segundo \cite{sommerville}, as entrevistas podem ser formais ou não, mas fazem parte da maioria dos processos de engenharia de requisitos. Nas entrevistas, é realizada pela equipe de engenharia de requisitos perguntas aos \textit{stakeholders} sobre o sistema em vigor e o que será desenvolvido. A partir dessas perguntas surgem os requisitos.
+
+As entrevistas podem ser de dois tipos: fechadas e abertas. Nas entrevistas fechadas, os \textit{stakeholders} respondem perguntas um conjunto de perguntas pré-definidas. Já nas entrevistas fechadas, são realizadas perguntas abertas sobre o sistema, e é nesse tipo de entrevista em que ocorre uma melhor compreensão das necessidades dos \textit{stakeholders}.  
+
 \subsubsubsection{Observação}
+
+\cite{sommerville} define observação como uma técnica que pode ser usada para compreender os processos operacionais e ajudar a extrair os requisitos de apoio para esses processos. 0 trabalho do dia a dia é observado e são feitas anotações sobre as tarefas reais em que os partici­
+pantes estão envolvidos. O valor da observação é que ela ajuda a descobrir requisitos implícitos do sistema que refletem as formas reais com que as pessoas trabalham, em vez de refletir processos formais definidos pela organização.
 
 \subsubsection{Requisitos Funcionais}
 \label{sec:requisitos_funcionais}
