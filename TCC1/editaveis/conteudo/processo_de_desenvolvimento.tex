@@ -16,7 +16,88 @@ De acordo com a Figura \ref{img:processo_de_desenvolvimento}, a primeira ativida
 
 A primeira atividade do processo \ref{img:processo_de_desenvolvimento} foi facilitada pois o desenvolvedor deste projeto estagia no setor do estudo de caso, NMIL, e com isso foram realizadas entrevistas a fim de entender como funciona todo o processo de marcar uma reunião até ela ser realizada. As entrevistas foram do tipo informal, pois assim foi possível entender melhor o contexto inserido. Esses processos podem ser visualizados nas Figuras \ref{img:modelagemProcessoGeral1Parte1}, \ref{img:modelagemProcessoGeral1Parte2}, \ref{img:modelagemProcessoGeral2Parte1} e \ref{img:modelagemProcessoGeral2Parte2}, que juntam englobam todo o processo do setor envolvendo reuniões, que conta com a presença de diversos participantes de diferentes setores.
 
-Após realizar as entrevistas, foram realizadas observações sobre como os \textit{stakeholders} interagem com o sistema em vigor, e foi constatado que o sistema atual chamado Gertic, ele é usado para marcar reuniões, contudo os participantes são chamados via email pela ferramenta \textit{Outlook}, não possuem um sistema para anotar as pautas e atas das reuniões, sendo feitas hoje a partir de folhas de papel.
+Após realizar as entrevistas, foram realizadas observações sobre como os \textit{stakeholders} interagem com o sistema em vigor, e foi constatado que o sistema atual chamado Gertiq (Gerenciador de Tíquetes), ele é usado para marcar reuniões, contudo os participantes são chamados via email pela ferramenta \textit{Outlook}, não possuem um sistema para anotar as pautas e atas das reuniões, sendo feitas hoje a partir de folhas de papel.
+
+\subsection{Requisitos Funcionais}
+
+Para a elaboração dos requisitos funcionais, foi constatado a necessidade de uma identificação e descrição dos usuários do sistema, sendo apresentadas a seguir nas Tabelas \ref{tab:usuario_administrador} e \ref{tab:usuario_participante}: 
+
+\begin{table}[H]
+	\begin{tabular}{|p{3.0cm}|p{12.0cm}|} 
+	\hline
+	\textbf{Usuário} & \textbf{Administrador} \\ \hline
+	\textbf{Descrição} & Usuário que irá ter total controle sobre o sistema e todas as funcionalidades.  \\ \hline
+	\textbf{O que ele faz?} & Ele é responsável pela condução das reuniões, documentar as ATAs, apresentar relatórios e pauta das reuniões, acompanhar a evolução dos projetos, e receber \textit{feedbacks} sobre as reuniões. \\ \hline
+	\textbf{O que ele precisa?} & Ele precisa de login e senha para conseguir acessar o sistema. visualizar um ambiente completo com todas as funcionalidades disponíveis no sistema. \\ \hline
+	\end{tabular}
+	 \caption{Usuário Administrador}
+	 \label{tab:usuario_administrador}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{3.0cm}|p{12.0cm}|} 
+	\hline
+	\textbf{Usuário} & \textbf{Participante das Reunioes} \\ \hline
+	\textbf{Descrição} & Usuário que irá acessar o sistema para visualizar a ATA das reuniões que participou. \\ \hline
+	\textbf{O que ele faz?} & Contribui com informações nas reuniões usadas para gerar requisitos do produto. \\ \hline
+	\textbf{O que ele precisa?} & Precisa de login e senha para conseguir acessar o sistema, visualizar as ATAas das reunioes que participou, podendo imprimir, baixar, e deixar comentários. \\ \hline
+	\end{tabular}
+	 \caption{Usuário Participante}
+	 \label{tab:usuario_participante}
+\end{table}
+
+Após identificados e descritos os usuários do sistema, foi elaborado um diagrama de caso de uso, explicado no tópico \ref{sec:casos_de_uso}, sendo apresentado a seguir:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/casosDeUso.png}
+	\caption{Casos de Uso Grata}
+	\label{img:casos_de_uso_grata}
+\end{figure}
+
+O diagrama de casos de uso da Figura \ref{img:casos_de_uso_grata} foi elaborado não apenas para visualização das funcionalidades, bem como as interações dos atores com o sistema, mas desenvolvido também como auxílio visual das funcionalidades para montar o \textit{backlog} do produto.
+
+\subsubsection{Backlog do Produto}
+
+O Backlog do Produto é composto pelas Histórias de Usuário e Histórias técnicas
+elicitadas e desenvolvidas durante as Sprints. Estas representam necessidades levantadas reais para a aplicação, levantadas pelo PO e desenvolvedor.
+
+\subsubsection{Histórias de Usuário}
+
+Nas Tabelas \ref{tab:historias_de_usuario_administrador} e \ref{tab:historias_de_usuario_participante} são apresentadas as Histórias de Usuário elicitadas a partir da análise do diagrama de casos de uso da Figura \ref{img:casos_de_uso_grata}. 
+As Histórias de Usuário representam as necessidades levantadas pelo usuário, que culminam em funcionalidades da aplicação. 
+
+\begin{table}[H]
+	\begin{tabular}{|p{4.0cm}|p{11.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	Fazer Login & Eu, como Administrador, desejo poder realizar login, para assim poder acessar as funcionalidades do sistema.  \\ \hline
+	Grenciar Projeto & Eu, como Administrador, desejo poder gerenciar meus projetos, sendo capaz de criar, exibir, editar, excluir e consulta-los quando desejar. \\ \hline
+	 & Eu, como Administrador, desejo que ao criar um projeto, o sistema ordene os projetos em ordem crescente numérica e verifique se todos os campos foram preenchidos. \\ \hline
+	 & Eu, como Administrador, desejo que ao editar um projeto, o sistema verifique se o projeto em questão está com o status "Finalizado" e caso esteja esteja encerrado, não permita a edição. \\ \hline
+	 & Eu, como Administrador, desejo que ao excluir um projeto, o sistema verifique se o projeto em questão já esteja com o status "Finalizado" e caso esteja encerrado, o sistema não poderá excluir o projeto. \\ \hline
+	 & Eu, como Administrador, desejo que seja exibida alguma mensagem que mostre que existe uma reunião encerrada dentro do projeto que eu quero excluir. \\ \hline
+	 & Eu, como Administrador, desejo que quando todas as reuniões presentes no projeto estejam com o status "Finalizada", automaticamente seja alterada o status do projeto para "Finalizado". \\ \hline
+	 Gerenciar Reuniões & Eu, como Administrador, desejo poder gerenciar minhas reuniões, sendo capaz de criar, exibir, editar, excluir e consulta-las quando desejar. \\ \hline
+	 & Eu, como Administrador, desejo que ao criar uma reunião, o sistema ordene as reuniões em ordem crescente numérica e verifique se todos os campos foram preenchidos. \\ \hline
+	 & Eu, como Administrador, desejo que ao excluir uma reunião, o sistema verifique se a reunião em questão já esteja com o status "Finalizada" e caso esteja encerrada, o sistema não poderá excluir a reunião. \\ \hline
+	 & Eu, como Administrador, desejo que o sistema exiba a hora e data apenas quando a reunião esteja com os status "Agendada" ou "Finalizada". \\ \hline
+	 & Eu, como Administrador, desejo que apenas eu tenha a opção de mudar o status da reunião. \\ \hline
+
+	\end{tabular}
+	 \caption{Histórias de Usuário Administrador}
+	 \label{tab:historias_de_usuario_administrador}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{1.5cm}|p{2.7cm}|p{5.0cm}|p{5.0cm}|} 
+	\hline
+	\textbf{ID} & \textbf{Ator} & \textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	01 & Administrador & Complexidade & Nova Tecnologia \\ \hline
+	\end{tabular}
+	 \caption{Histórias de Usuário}
+	 \label{tab:historias_de_usuario_participante}
+\end{table}
 
 % FRONT-END
 % A linguagem \textit{front-end} escolhida para este projeto, foi o \textit{React}, pois além de facilitar o desenvolvimento e interação com usuário final, é uma das mais utilizadas ao redor do mundo, então facilita uma manutenção futura e evolução do \textit{software}.
