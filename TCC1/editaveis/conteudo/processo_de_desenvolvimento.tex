@@ -6,7 +6,7 @@ Como definido o tópico \ref{sec:processo_de_desenvolvimento_de_software}, foi e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figuras/processo_de_desenvolvimento.png}
-	\caption{Processo de Desenvolvimento do Grata}
+	\caption{Processo de Desenvolvimento do Grata. Fonte: Própria}
 	\label{img:processo_de_desenvolvimento}
 \end{figure}
 
@@ -51,7 +51,7 @@ Após identificados e descritos os usuários do sistema, foi elaborado um diagra
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{figuras/casosDeUso.png}
-	\caption{Casos de Uso Grata}
+	\caption{Casos de Uso Grata. Fonte: Própria}
 	\label{img:casos_de_uso_grata}
 \end{figure}
 
@@ -64,7 +64,7 @@ elicitadas e desenvolvidas durante as Sprints. Estas representam necessidades le
 
 \subsubsection{Histórias de Usuário}
 
-Nas Tabelas \ref{tab:historias_de_usuario_administrador} e \ref{tab:historias_de_usuario_participante} são apresentadas as Histórias de Usuário elicitadas a partir da análise do diagrama de casos de uso da Figura \ref{img:casos_de_uso_grata}. 
+Nas Tabelas \ref{tab:historias_de_usuario_administrador_parte1}, \ref{tab:historias_de_usuario_administrador_parte2} são apresentadas as Histórias de Usuário elicitadas a partir da análise do diagrama de casos de uso da Figura \ref{img:casos_de_uso_grata}. 
 As Histórias de Usuário representam as necessidades levantadas pelo usuário, que culminam em funcionalidades da aplicação. 
 
 \begin{table}[H]
@@ -72,31 +72,55 @@ As Histórias de Usuário representam as necessidades levantadas pelo usuário, 
 	\hline
 	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
 	Fazer Login & Eu, como Administrador, desejo poder realizar login, para assim poder acessar as funcionalidades do sistema.  \\ \hline
-	Grenciar Projeto & Eu, como Administrador, desejo poder gerenciar meus projetos, sendo capaz de criar, exibir, editar, excluir e consulta-los quando desejar. \\ \hline
-	 & Eu, como Administrador, desejo que ao criar um projeto, o sistema ordene os projetos em ordem crescente numérica e verifique se todos os campos foram preenchidos. \\ \hline
-	 & Eu, como Administrador, desejo que ao editar um projeto, o sistema verifique se o projeto em questão está com o status "Finalizado" e caso esteja esteja encerrado, não permita a edição. \\ \hline
-	 & Eu, como Administrador, desejo que ao excluir um projeto, o sistema verifique se o projeto em questão já esteja com o status "Finalizado" e caso esteja encerrado, o sistema não poderá excluir o projeto. \\ \hline
-	 & Eu, como Administrador, desejo que seja exibida alguma mensagem que mostre que existe uma reunião encerrada dentro do projeto que eu quero excluir. \\ \hline
-	 & Eu, como Administrador, desejo que quando todas as reuniões presentes no projeto estejam com o status "Finalizada", automaticamente seja alterada o status do projeto para "Finalizado". \\ \hline
-	 Gerenciar Reuniões & Eu, como Administrador, desejo poder gerenciar minhas reuniões, sendo capaz de criar, exibir, editar, excluir e consulta-las quando desejar. \\ \hline
-	 & Eu, como Administrador, desejo que ao criar uma reunião, o sistema ordene as reuniões em ordem crescente numérica e verifique se todos os campos foram preenchidos. \\ \hline
-	 & Eu, como Administrador, desejo que ao excluir uma reunião, o sistema verifique se a reunião em questão já esteja com o status "Finalizada" e caso esteja encerrada, o sistema não poderá excluir a reunião. \\ \hline
-	 & Eu, como Administrador, desejo que o sistema exiba a hora e data apenas quando a reunião esteja com os status "Agendada" ou "Finalizada". \\ \hline
-	 & Eu, como Administrador, desejo que apenas eu tenha a opção de mudar o status da reunião. \\ \hline
-
+	Cadastrar Plano de Reuniões & Eu, como Administrador, desejo poder criar, editar, excluir o plano de reuniões, para assim conseguir melhor conduzir as reuniões.\\ \hline
+	& Eu, como Administrador, desejo que o sistema converta o plano de reuniões em PDF, para que seja usado mais tarde ao comunicar os participantes da reunião. \\ \hline
+	& Eu, como Administrador, desejo que apenas eu possa gerenciar o plano de reuniões, para assim ter total controle sobre a reunião. \\ \hline
+	Cadastrar Pauta da Reunião & Eu, como Administrador, desejo poder criar, editar e excluir a pauta da reunião, para assim conseguir ser mais objetivo na reunião. \\ \hline
+	& Eu, como Administrador, desejo que quando a reunião estiver com o status "Finalizada", o sistema impeça que as pautas sejam excluídas ou alteradas. \\ \hline
+	& Eu, como Administrador, desejo que o sistema converta a pauta da reunião em PDF, para que seja usada mais tarde ao comunicar os participantes da reunião. \\ \hline
+	Gerenciar Tópicos da Reunião & Eu, como Administrador, desejo poder criar, editar e excluir os tópicos da reunião, para assim ser mais objetivo com o desenvolvimento da reunião. 
+	\\ \hline
+	& Eu, como Administrador, desejo que os tópicos criados possam ser adicionados a pauta das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que os tópicos sejam tanto adicionados as reuniões, quanto fiquem disponíveis fora delas para que sejam usados em futuras reuniões. \\ \hline
+	Gerenciar Regras de Conduta & Eu, como Administrador, desejo poder criar, editar e excluir as regras de conduta, para que assim a reunião não tenha dispersões de foco. \\ \hline
+	& Eu, como Administrador, desejo que as regras de conduta criadas possam ser adicionadas a pauta das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que as regras de conduta sejam tanta adicionadas as reuniões, quanto fiquem disponíveis foram delas para que sejam usadas em futuras reuniões. \\ \hline
 	\end{tabular}
-	 \caption{Histórias de Usuário Administrador}
-	 \label{tab:historias_de_usuario_administrador}
+	 \caption{Histórias de Usuário Administrador Parte 1}
+	 \label{tab:historias_de_usuario_administrador_parte1}
 \end{table}
 
 \begin{table}[H]
-	\begin{tabular}{|p{1.5cm}|p{2.7cm}|p{5.0cm}|p{5.0cm}|} 
+	\begin{tabular}{|p{4.0cm}|p{11.0cm}|} 
 	\hline
-	\textbf{ID} & \textbf{Ator} & \textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
-	01 & Administrador & Complexidade & Nova Tecnologia \\ \hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	Gerar Relatório de Presença & Eu, como Administrador, desejo que o sistema consulte a presença dos participantes. \\ \hline
+	& Eu, como Administrador, desejo que o sistema calcule o total de presença dos participantes. \\ \hline
+	& Eu, como Administrador, desejo que o sistema exiba o relatório de participantes, contendo a média de presença dos participantes, melhores participantes para se convocar, participantes duvidosos e piores participantes. \\ \hline
+	Gerenciar Usuários & Eu, como Administrador, desejo poder criar e excluir usuários do sistema, para assim conseguir ter controle sobre os usuários do sistema. \\ \hline
+	& Eu, como Administrador, desejo que apenas eu possa adicionar outros usuário. \\ \hline
+	Gerenciar Participantes da Reunião &  Eu, como Administrador, desejo poder adicionar e remover os participantes das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que quando a reunião seja marcada, não seja mais possível retirar um participante da reunião. \\ \hline
+	& Eu, como Administrador, desejo que ao incluir um participante a reunião, o sistema exporte as informações deste para a ATA. \\ \hline
+	Gerenciar Marcar Reunião & Eu, como Administrador, desejo que eu possa incluir, editar e excluir os dados da reunião. \\ \hline
+	& Eu, como Administrador, desejo poder visualizar os participantes confirmados ou não à reunião. \\ \hline
+	& Eu, como Administrador, desejo que ao marcar reunião, o status da reunião mude para "Agendada" e exiba data e hora. \\ \hline
+	& Eu, como Administrador, desejo que caso a reunião seja cancelada, todos os participantes devem receber por \textit{email} a mensagem. \\ \hline
+	& Eu, como Administrador, desejo que quando faltar menos que 48 horas para acontecer a reunião, caso ainda não tenha a confirmação de pelo menos 75\% dos convocados, o sistema deve cancelar a reunião \\ \hline
 	\end{tabular}
-	 \caption{Histórias de Usuário}
-	 \label{tab:historias_de_usuario_participante}
+	 \caption{Histórias de Usuário Administrador Parte 2}
+	 \label{tab:historias_de_usuario_administrador_parte2}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{4.0cm}|p{11.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	Gerar Relatório de Presença & Eu, como Administrador, desejo que o sistema consulte a presença dos participantes. \\ \hline
+	& Eu, como Administrador, desejo que o sistema calcule o total de presença dos participantes. \\ \hline 
+	\end{tabular}
+	 \caption{Histórias de Usuário Administrador Parte 2}
+	 \label{tab:historias_de_usuario_administrador_parte3}
 \end{table}
 
 % FRONT-END
