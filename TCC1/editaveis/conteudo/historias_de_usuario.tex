@@ -1,0 +1,78 @@
+\begin{table}[H]
+	\begin{tabular}{|p{5.0cm}|p{10.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	\textbf{Fazer Login} & Eu, como Administrador, desejo poder realizar login, para assim poder acessar as funcionalidades do sistema.  \\ \hline
+	\textbf{Gerenciar Reuniões} & Eu, como Administrador, desejo poder criar, editar, excluir as reuniões, para assim conseguir melhor conduzir as reuniões.\\ \hline
+	& Eu, como Administrador, desejo que apenas eu possa gerenciar reuniões, para assim ter total controle sobre a reunião. \\ \hline
+	\textbf{Cadastrar Pauta da Reunião} & Eu, como Administrador, desejo poder criar, editar e excluir a pauta da reunião, para assim conseguir ser mais objetivo na reunião. \\ \hline
+	& Eu, como Administrador, desejo que quando a reunião estiver com o status "Finalizada", o sistema impeça que as pautas sejam excluídas ou alteradas. \\ \hline
+	& Eu, como Administrador, desejo que o sistema converta a pauta da reunião em PDF, para que seja usada mais tarde ao comunicar os participantes da reunião. \\ \hline
+	\textbf{Gerenciar Tópicos da Reunião} & Eu, como Administrador, desejo poder criar, editar e excluir os tópicos da reunião, para assim ser mais objetivo com o desenvolvimento da reunião. 
+	\\ \hline
+	& Eu, como Administrador, desejo que os tópicos criados possam ser adicionados a pauta das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que os tópicos sejam tanto adicionados as reuniões, quanto fiquem disponíveis fora delas para que sejam usados em futuras reuniões. \\ \hline
+	\textbf{Gerenciar Projetos} & Eu, como Administrador, desejo poder criar, editar, excluir, e procurar projetos, para que assim tenha um controle sobre os mesmos e sobre as reuniões. \\ \hline
+	& Eu, como Administrador, desejo que apenas eu tenha acesso a permissões de adição, edição e exclusão sobre os projetos. \\ \hline
+	\textbf{Gerenciar Regras de Conduta} & Eu, como Administrador, desejo poder criar, editar e excluir as regras de conduta, para que assim a reunião não tenha dispersões de foco. \\ \hline
+	& Eu, como Administrador, desejo que as regras de conduta criadas possam ser adicionadas a pauta das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que as regras de conduta sejam tanta adicionadas as reuniões, quanto fiquem disponíveis foram delas para que sejam usadas em futuras reuniões. \\ \hline
+	\end{tabular}
+	 \caption{Histórias de Usuário Administrador Parte 1}
+	 \label{tab:historias_de_usuario_administrador_parte1}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{5.0cm}|p{10.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	\textbf{Gerar Relatório de Presença} & Eu, como Administrador, desejo que o sistema consulte a presença dos participantes. \\ \hline
+	& Eu, como Administrador, desejo que o sistema calcule o total de presença dos participantes. \\ \hline
+	& Eu, como Administrador, desejo que o sistema exiba o relatório de participantes, contendo a média de presença dos participantes, melhores participantes para se convocar, participantes duvidosos e piores participantes. \\ \hline
+	\textbf{Gerenciar Usuários} & Eu, como Administrador, desejo poder criar e excluir usuários do sistema, para assim conseguir ter controle sobre os usuários do sistema. \\ \hline
+	& Eu, como Administrador, desejo que apenas eu possa adicionar outros usuário. \\ \hline
+	\textbf{Gerenciar Participantes da Reunião} &  Eu, como Administrador, desejo poder adicionar e remover os participantes das reuniões. \\ \hline
+	& Eu, como Administrador, desejo que quando a reunião seja marcada, não seja mais possível retirar um participante da reunião. \\ \hline
+	& Eu, como Administrador, desejo que ao incluir um participante a reunião, o sistema exporte as informações deste para a ATA. \\ \hline
+	\textbf{Gerenciar Marcar Reunião} & Eu, como Administrador, desejo que eu possa incluir, editar e excluir os dados da reunião. \\ \hline
+	& Eu, como Administrador, desejo poder visualizar os participantes confirmados ou não à reunião. \\ \hline
+	& Eu, como Administrador, desejo que ao marcar reunião, o status da reunião mude para "Agendada" e exiba data e hora. \\ \hline
+	& Eu, como Administrador, desejo que caso a reunião seja cancelada, todos os participantes devem receber por \textit{email} a mensagem. \\ \hline
+	& Eu, como Administrador, desejo que quando faltar menos que 48 horas para acontecer a reunião, caso ainda não tenha a confirmação de pelo menos 75\% dos convocados, o sistema deve cancelar a reunião \\ \hline
+	\textbf{Gerenciar Questionário de Avaliação} & Eu, como Administrador, desejo poder criar, editar e excluir o questionário de avaliação da reunião, para assim ter um \textit{feedback} sobre a mesma. \\ \hline 
+	\end{tabular}
+	 \caption{Histórias de Usuário Administrador Parte 2}
+	 \label{tab:historias_de_usuario_administrador_parte2}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{5.0cm}|p{10.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	\textbf{Gerenciar Questionário de Avaliação} & Eu, como Administrador, desejo que seja possível realizar \textit{download} do questionário. \\ \hline
+	& Eu, como Administrador, desejo que o sistema só permita a criação da ATA, após o questionário ser gerado. \\ \hline
+	& Eu, como Administrador, desejo que as perguntas fiquem disponíveis dentro de uma reunião específica, quanto seja possível utilizar-las em outro questionário. \\ \hline
+	& Eu, como Administrador, desejo que ao excluir uma pergunta do questionário, essa pergunta não seja excluida de um questionário anterior. \\ \hline
+	& Eu, como Administrador, desejo que apenas eu possa visualizar as respostas do questionário \\ \hline
+	\textbf{Gerenciar ATA da Reunião} & Eu, como Administrador, desejo criar, editar, excluir a ATA da reunião.\\ \hline
+	& Eu, como Administrador, desejo que o sistema mostre os tópicos da reunião previamente adicionados, \\ \hline
+	& Eu, como Administrador, desejo que seja mostrado os dados anteriormente cadastrados na ATA. \\ \hline
+	& Eu, como Administrador, desejo que a ATA seja possível converter em PDF. \\ \hline
+	\end{tabular}
+	 \caption{Histórias de Usuário Administrador Parte 3}
+	 \label{tab:historias_de_usuario_administrador_parte3}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|p{5.0cm}|p{10.0cm}|} 
+	\hline
+	\textbf{Funcionalidade} & \textbf{História de Usuário} \\ \hline
+	\textbf{Buscar Projetos} & Eu, como Participante da Reunião, desejo poder procurar qualquer projeto no sistema. \\ \hline
+	\textbf{Gerenciar Perfil} & Eu, como Participante da Reunião, desejo poder editar as informações do meu perfil, para assim manter minhas informações atualizadas. \\ \hline
+	& Eu, como Participante da Reunião, desejo poder excluir meu perfil. \\ \hline
+	\textbf{Inserir Comentários} & Eu, como Participante da Reunião, desejo poder inserir comentários nas reuniões em que eu participar, para aumentar o \textit{feedback} da reunião para os administradores. \\ \hline
+	\textbf{Responder Questionário de Avaliação} & Eu, como Participante da Reunião, desejo poder responder o questionário de avaliação para dar um \textit{feedback} da reunião para os administradores.\\ \hline
+	\end{tabular}
+	 \caption{Histórias de Usuário Participante }
+	 \label{tab:historias_de_usuario_participante_parte1}
+\end{table}
