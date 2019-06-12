@@ -68,36 +68,50 @@ As Histórias de Usuário representam as necessidades levantadas pelo usuário, 
 
 \subsection{Requisitos Não-Funcionais}
 
+Os requisitos não-funcionais, explicitados no tópico \ref{sec:requisitos_nao_funcionais}, são explicitados a seguir na Tabela \ref{tab:requisitos_nao_funcionais}:
 
-% FRONT-END
-% A linguagem \textit{front-end} escolhida para este projeto, foi o \textit{React}, pois além de facilitar o desenvolvimento e interação com usuário final, é uma das mais utilizadas ao redor do mundo, então facilita uma manutenção futura e evolução do \textit{software}.
+\begin{table}[H]
+	\begin{tabular}{|p{5.0cm}|p{10.0cm}|} 
+	\hline
+	\textbf{Requisito} & \textbf{Descrição} \\ \hline
+	\textbf{Usabilidade} & O sistema de gerenciamento de reuniões e ATAs será construído para rodar em ambiente web. Deverá possuir um design responsivo. A interface do sistema deverá se comportar adequadamente independente do \textit{front-end} que será utilizado para o acesso - \textit{Browser, Smartphone} ou \textit{Tablet}. \\ \hline
+	\textbf{Compatibilidade} & O sistema é desenvolvido para ser um sistema web, logo não deve apresentar problemas de compatibilidade entre \textit{browsers}, sendo eles o \textit{Google Chrome, Mozilla Firefox, Microsoft Edge e Safari}. \\ \hline
+	\textbf{Segurança} & O sistema deve garantir a segurança dos dados mais críticos tais como senha dos usuários, cpf e \textit{emails}. \\ \hline
+	\textbf{Validação} & O sistema deverá validar todos os campos obrigatórios tais como, nome do usuário, senha, nome e descrição da reunião. \\ \hline
+	\textbf{Manutenção e Evolução} & O código deverá seguir padronização pela comunidade de \textit{software}, seguir recomendações de comentários em partes de código mais complexas, para assim facilitar a manutenção e evolução no futuro. \\ \hline
+	\end{tabular}
+	 \caption{Requisitos Não-Funcionais}
+	 \label{tab:requisitos_nao_funcionais}
+\end{table}
 
+\subsection{Diagrama de Classe}
 
-% BACK-END
-% A linguagem \textit{back-end} escolhida para este projeto, foi a \textit{Python Django-Rest}, pois tem uma ótima conexão com a linguagem \textit{front-end}, e por ser muito utilizada, possibilitando assim uma manutenção e evolução futura.
+Para o desenvolvimento do sistema e auxiliar uma manutenção e evolução do sistema, foi montado um diagrama de classe que pode ser visto na Figura x:
 
-%  Neste projeto a arquitetura adotada é uma adaptação ao padrão arquitetural MVC \textit{(model-view-controller)}.
+\subsection{Front-End}
 
+No tópico \ref{sec:front-end}, foi explicado e exemplificada algumas linguagens \textit{front-end}. A linguagem \textit{front-end} escolhida para este projeto, foi o \textit{React}, pois além de facilitar o desenvolvimento e interação com usuário final, é uma das mais utilizadas ao redor do mundo, então facilita uma manutenção futura e evolução do \textit{software}.
 
+\subsection{Back-End}
 
-% \subsubsection{Arquitetura do Projeto}
+No tópico \ref{sec:back-end}, foi explicado e exemplificado algumas linguagens \textit{back-end}. A linguagem \textit{back-end} escolhida para este projeto, foi a \textit{Python Django-Rest}, pois tem uma ótima conexão com a linguagem \textit{front-end}, e por ser muito utilizada, possibilitando assim uma manutenção e evolução futura.
 
-% Neste projeto é feita uma adaptação ao padrão MVC, por conta da escolha da linguagem \textit{front-end}. O \textit{React} possui um padrão arquitetural diferente, chamado de arquitetura de componentes/microserviços. Esse padrão possui semelhanças ao MVC, e o que será utilizado dele será a parte da \textit{View}. Enquanto a linguagem \textit{back-end} é responsável por trabalhar os dados provindos do \textit{front-end} e oferecer um retorno a ele. 
+\subsection{Arquitetura do Projeto}
 
-% A seguir será mostrado como funciona separadamente o \textit{React},relacionado ao \textit{front-end} que engloba a \textit{View}, enquanto o \textit{Python Django-Rest} é responsável pelo \textit{back-end} e que engloba a \textit{Model} e a \textit{Controller}:
+Neste projeto é feita uma adaptação ao padrão MVC, exemplificado no tópico \ref{sec:mvc}, por conta da escolha da linguagem \textit{front-end}. O \textit{React} possui um padrão arquitetural diferente do MVC, chamado de arquitetura de componentes/microserviços. Esse padrão possui semelhanças ao MVC, e o que será utilizado dele será a parte da \textit{View}. Enquanto a linguagem \textit{back-end} é responsável por trabalhar os dados provindos do \textit{front-end} e oferecer um retorno a ele. 
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=1.0\textwidth]{figuras/diagrama_react.png}
-% 	\caption{Diagrama React/Microsserviços}
-% 	\label{img:diagrama_react}
-% \end{figure}
+A seguir será mostrado como funciona separadamente o \textit{React},relacionado ao \textit{front-end} que engloba a \textit{View}, enquanto o \textit{Python Django-Rest} é responsável pelo \textit{back-end} e que engloba a \textit{Model} e a \textit{Controller}:
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=1.0\textwidth]{figuras/django_rest.png}
-% 	\caption{Diagrama Django REST Framework}
-% 	\label{img:diagrama_rest}
-% \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/diagrama_react.png}
+	\caption{Diagrama React/Microsserviços}
+	\label{img:diagrama_react}
+\end{figure}
 
-% \section{Cronograma TCC}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{figuras/django_rest.png}
+	\caption{Diagrama Django REST Framework}
+	\label{img:diagrama_rest}
+\end{figure}
