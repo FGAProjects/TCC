@@ -4,33 +4,59 @@
 \section{Gerenciamento de Projetos}
 \label{sec:gerenciamento_de_projetos}
 
-\subsection{Modelo Tradicional}
+\subsection{Modelo Tradicional - PMBOK}
 \label{sec:modelo_tradicional}
 
 Uma metodologia de gerenciamento de projetos no modelo tradicional, de acordo com \cite{kerzner} é o alcance da excelência no gerenciamento de projetos se torna impossível sem um processo repetitivo que possa ser utilizado em cada projeto.
 
-No modelo tradicional, um dos mais modelos mais utilizados é o RUP \textit{(Rational Unified Process)}. O RUP oferece uma metodologia responsável por responder questões como boas práticas para o gerenciamento de projetos, com o objetivo de estruturar e formatar os processos associados às atividades que envolvem a tecnologia de informação. 
-
-As 4 fases principais do RUP podem ser vistas na figura \ref{img:fases_do_rup}:
+No modelo tradicional, um dos modelos utilizados é o definido no \cite{pmbok}. \cite{gerenciamento_de_projetos_pmbok} define gerenciamento de projetos como uma interação de ações, ou faltas de ação em uma área, que afeta também outras áreas. Essas interações podem levar a mudanças no projeto, dependendo do seu tamanho, e mudanças quase sempre afetam o prazo de entrega do projeto, logo afetam o custo. O PMBOK (\textit{Project Management Body of Knowledge}) possui cinco grupos de processos, como pode ser na Figura \ref{img:fases_pmbok}:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figuras/fases_rup.jpg}
-	\caption{Fases do RUP. Fonte: \cite{rup}.}
-	\label{img:fases_do_rup}
+	\includegraphics[width=0.8\textwidth]{figuras/fases_pmbok.png}
+	\caption{Grupos de processos do Gerenciamento de Projetos, Fonte: Própria.}
+	\label{img:fases_pmbok}
 \end{figure}
 
-O desenvolvimento do plano de gerenciamento do projeto é uma atividade iterativa ao longo do ciclo de vida do projeto, sempre pronto para melhoria contínua e permitindo à equipes do projeto definir e trabalhar com maior nível de detalhes. De acordo com o \cite{pmbok}, as fases do \cite{rup} são sobrepostas, ou seja, o início de uma fase é ao término de uma outra, isso leva a algumas atividades ocorrerem de forma paralela. A maneira como este tipo de projeto aumenta os riscos, retrabalhos, e exigir recursos adicionais para permitir as atividades em paralelo, como mostrado na figura \ref{img:fases_do_rup}.
-
-Nesta perspectiva, se tem o papel do gerente de projeto como um líder responsável por liderar a equipe para alcançar os objetivos previstos no planejamento do projeto. Entre as funções destes líderes se tem:
+A definição desses grupos de processos podem ser vistos a seguir:
 
 \begin{itemize}
-    \item Conhecimento acerca do gerenciamento de projetos;
-    \item Desempenho para aplicar seus conhecimentos na prática;
-    \item Comportamento pessoal de liderança, atingindo objetivos e equilibrando restrições.
+	\item \textbf{Processos de Iniciação} – reconhecer que um projeto ou fase deve começar e se comprometer para executá-lo(a);
+	\item \textbf{Processos de Planejamento} – planejar um esquema de trabalho que seja viável para atingir os objetivos do projeto;
+	\item \textbf{Processos de Execução} – Coordenar pessoas e recursos para implementar o plano;
+	\item \textbf{Processos de Monitoramento e Controle} – Averiguar que os objetivos do projeto estão sendo seguidos, monitorar e avaliar seu progresso, realizando ações corretivas e replanejando sempre que necessário; 
+	\item \textbf{Processos de Encerramento} – formalizar a aceitação do projeto ou
+	fase e encerra-lo(a) de uma forma organizada.
 \end{itemize}
 
-Este tipo de gerenciamento de projeto é mais utilizado em empresas já consolidadas, de ramo mais formal, que possui mais burocracia em seus projetos e por tanto maior rigor de documentação e de liderança dos gerentes de projeto. Essa hierarquia pode ser vista na Figura \ref{img:gerencia_de_projetos_tradicional}.
+Esses processos são ligados pelos resultados que são desenvolvidos neles, sendo que o resultado de saída de um processo a entrada de outro processo. O desenvolvimento do plano de gerenciamento do projeto é uma atividade iterativa ao longo do ciclo de vida do projeto, sempre pronto para melhoria contínua e permitindo à equipes do projeto definir e trabalhar com maior nível de detalhes. De acordo com o \cite{pmbok} podem ser sobrepostas, ou seja, o início de uma fase é ao término de uma outra, isso leva a algumas atividades ocorrerem de forma paralela. A maneira como este tipo de projeto  é definido, aumenta os riscos, retrabalhos, e exige recursos adicionais para permitir que as atividades ocorram em paralelo, como mostrado na Figura \ref{img:fases_sobrepostas}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figuras/fases_pmbok_sobrepostas.jpg}
+	\caption{Superposição dos Grupos de Processo. Fonte: \cite{fases_sobrepostas_pmbok}.}
+	\label{img:fases_sobrepostas}
+\end{figure}
+
+\subsubsection{Áreas de Conhecimento PMBOK}
+
+O PMBOK possui nove áreas de conhecimentos, sendo elas:
+
+\begin{itemize}
+	\item \textbf{Gerência da Integração do Projeto} - descreve os processos necessários para que os diversos elementos do projeto sejam adequadamente coordenados. Responsável pelo desenvolvimento do plano do projeto, execução do plano do projeto e controle das mudanças;
+	\item \textbf{Gerência do Escopo do Projeto} - descreve os processos necessários para que o projeto atenda ao que foi definido no inicio do projeto, e nada além disso. Contempla a fase de iniciação, planejamento, detalhamento, verificação e controle de mudanças do escopo;
+	\item \textbf{Gerência do Tempo do Projeto} - descreve os processos necessários para que o projeto seja concluido dentro do prazo previamente estabelecido. Definição, sequenciamento e estimação das atividades, além do cronograma fazem parte dessa área;
+	\item \textbf{Gerência do Custo do Projeto} - descreve os processos necessários para assegurar que o projeto seja completado dentro do orçamento previsto. Supervisiona o planejamento dos recursos, estimativa, orçamento e controle dos custos;
+	\item \textbf{Gerência da Qualidade do Projeto} - descreve os processos necessários para assegurar que as necessidades que originaram o desenvolvimento do projeto serão
+	satisfeitas. Abrange o planejamento, garantia e controle da qualidade;
+	\item \textbf{Gerência dos Recursos Humanos do Projeto} - descreve os processos necessários para proporcionar a melhor utilização das pessoas envolvidas no projeto. Responsável pelo planejamento organizacional, montagem e desenvolvimento da equipe;
+	\item \textbf{Gerência das Comunicações do Projeto} - descreve os processos necessários para assegurar que a geração, captura, distribuição, armazenamento e pronta apresentação das informações do projeto sejam feitas de forma adequada e no tempo certo. Ela é composta pelo planejamento das comunicações, distribuição das
+	informações, relato de desempenho e encerramento administrativo.
+	\item \textbf{Gerência dos Riscos do Projeto} - descreve os processos que dizem respeito à identificação, análise e resposta a riscos do projeto. É composta pela identificação,quantificação , desenvolvimento das respostas e controle das respostas aos riscos.
+	\item \textbf{Gerência das Aquisições do Projeto} - descreve os processos necessários para a aquisição de mercadorias e serviços fora da organização que desenvolve o 	projeto. É responsável pelo planejamento, preparação das aquisições, obtenção de propostas, seleção de fornecedores, administração dos contratos e encerramento do contrato.
+\end{itemize}
+
+Este modelo de gerenciamento de projeto é mais utilizado em empresas já consolidadas, de ramo mais formal, que possui mais burocracia em seus projetos e por tanto maior rigor de documentação e de liderança dos gerentes de projeto. Essa hierarquia pode ser vista na Figura \ref{img:gerencia_de_projetos_tradicional}.
 
 \begin{figure}[H]
 	\centering
@@ -95,7 +121,7 @@ O ciclo de vida pode ser visto na figura \ref{img:ciclo_de_vida_scrum}:
 	\label{img:ciclo_de_vida_scrum}
 \end{figure}
 
-Como visto na figura \ref{img:ciclo_de_vida_scrum}, o \textit{Scrum} é um ciclo progressivo de várias iterações bem definidas, denominadas \textit{Sprints}. As \textit{Sprints} podem ter duração de uma a quatro semanas. Antes de cada \textit{Sprint}, deve ser realizada a reunião de planejamento da \textit{Sprint}, chamada de \textit{Sprint Planning Meeting}. A \textit{Sprint Planning Meeting} é uma reunião de planjemanto em que o \textit{Product Owner}
+Como visto na figura \ref{img:ciclo_de_vida_scrum}, o \textit{Scrum} é um ciclo progressivo de várias iterações bem definidas, denominadas \textit{Sprints}. As \textit{Sprints} podem ter duração de uma a quatro semanas. Antes de cada \textit{Sprint}, deve ser realizada a reunião de planejamento da \textit{Sprint}, chamada de \textit{Sprint Planning Meeting}. A \textit{Sprint Planning Meeting} é uma reunião de planejemanto em que o \textit{Product Owner}
 prioriza os itens do \textit{Product Backlog} e a equipe seleciona as atividades que serão implementadas ao longo da \textit{Sprint}. No \textit{Product Backlog} são registradas as funcionalidades que serão implementadas pedidas pelo \textit{Product Backlog}. 
 
 Com o objetivo de saber o progresso de cada equipe dentro da \textit{Sprint}, ocorrem as reuniões diárias, denominadas \textit{Daily Meetings}, que tem duração de no máximo 15 minutos e ocorrem com todos os participantes em pé, respondendo perguntas como: "O que você fez ontem?", "O que você fez hoje?" e "O que você vai fazer amanhã?". 
