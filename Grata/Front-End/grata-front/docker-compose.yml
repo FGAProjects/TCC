@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  grata:
+    container_name: grata-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=development
