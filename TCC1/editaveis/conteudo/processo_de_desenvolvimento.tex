@@ -66,6 +66,10 @@ elicitadas e desenvolvidas durante as Sprints. Estas representam necessidades le
 
 As Histórias de Usuário representam as necessidades levantadas pelo usuário, que culminam em funcionalidades da aplicação. Nas Tabelas \ref{tab:historias_de_usuario_administrador_parte1}, \ref{tab:historias_de_usuario_administrador_parte2}, \ref{tab:historias_de_usuario_administrador_parte3}, e \ref{tab:historias_de_usuario_participante_parte1} são apresentadas as Histórias de Usuário elicitadas a partir da análise do diagrama de casos de uso da Figura \ref{img:casos_de_uso_grata}. 
 
+\subsubsection{Histórias Técnicas}
+
+As Histórias Técnicas são necessidades levantadas para cumprir questões pontuais que não necessariamente estão ligadas aos requisitos funcionais. Essas histórias podem agregar podem não agregar valor ao produto diretamente. As histórias técnicas deste projeto estão na Tabela \ref{tab:historias_tecnicas}. 
+
 \subsection{Requisitos Não-Funcionais}
 
 Os requisitos não-funcionais, explicitados no tópico \ref{sec:requisitos_nao_funcionais}, são explicitados a seguir na Tabela \ref{tab:requisitos_nao_funcionais}:
@@ -126,6 +130,12 @@ No tópico \ref{sec:back-end}, foi explicado e exemplificado algumas linguagens 
 \subsection{Protótipos}
 
 Foram elaborados alguns protótipos para auxiliar o desenvolvimento deste projeto, sendo possível visualiza-los nos apêndices \ref{ch:prototipos}.
+
+\subsection{Integração Contínua e Deploy}
+
+Para a integração contínua, explicada no tópico \ref{sec:integracao_continua}, foi escolhida a ferramenta \textit{TravisCI}. Essa ferramenta possui integração com o \textit{GitHub}, que é a ferramenta para o versionamento do código gerado. Ao realizar um \textit{commit} pelo \textit{GitHub}, o \textit{TravisCI} irá analisar o código e verificar se algo está comprometendo o ambiente de desenvolvimento. Toda vez que o \textit{TravisCI} consegue gerar ou não uma \textit{build}, é enviado para o \textit{e-mail} do responsável um informe sobre o status do projeto.
+
+Para o \textit{deploy}, foi escolhido o \textit{Heroku}, pois é uma plataforma que além de criar, monitorar, entregar e escalar produtos, também é uma ferramenta que possui integração com o \textit{GitHub} e que para este projeto o \textit{Heroku} será utilizado para hospedar os dados da aplicação.  
 
 \subsection{Arquitetura do Projeto}
 
