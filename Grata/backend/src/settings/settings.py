@@ -24,7 +24,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'grataapi.urls'
+ROOT_URLCONF = 'src.settings.urls'
 
 TEMPLATES = [
     {
@@ -42,7 +42,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'grataapi.wsgi.application'
+WSGI_APPLICATION = 'src.settings.wsgi.application'
 
 DATABASES = {
     'default': {
