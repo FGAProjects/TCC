@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    build: ./backend
+    build: ./backend/src
     volumes:
       - ./backend:/app/backend
     ports:
