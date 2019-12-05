@@ -100,5 +100,3 @@ Para compilar o texto através do Makefile digite:
 
 	$ make clean
 	$ make
-
-
