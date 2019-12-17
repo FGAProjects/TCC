@@ -14,7 +14,7 @@ Como definido o tópico \ref{sec:processo_de_desenvolvimento_de_software}, foi e
 
 De acordo com a Figura \ref{img:processo_de_desenvolvimento}, a primeira atividade a ser realizada é elicitação dos requisitos, definidos no tópico \ref{sec:elicitacao_requisitos}. As técnicas utilizadas para elicitação dos requisitos foram entrevista e observação, definidas respectivamente nos tópicos \ref{sec:entrevista} e \ref{sec:observacao}. 
 
-A primeira atividade do processo \ref{img:processo_de_desenvolvimento} foi facilitada pois o desenvolvedor deste projeto estagia no setor do estudo de caso, NMIL, e com isso foram realizadas entrevistas a fim de entender como funciona todo o processo de marcar uma reunião até ela ser realizada. As entrevistas foram do tipo informal, pois assim foi possível entender melhor o contexto inserido. Esses processos podem ser visualizados nas Figuras \ref{img:modelagemProcessoGeral1Parte1}, \ref{img:modelagemProcessoGeral1Parte2}, \ref{img:modelagemProcessoGeral2Parte1} e \ref{img:modelagemProcessoGeral2Parte2}, que juntam englobam todo o processo do setor envolvendo reuniões, que conta com a presença de diversos participantes de diferentes setores.
+A primeira atividade do processo \ref{img:processo_de_desenvolvimento} foi facilitada pois o desenvolvedor deste projeto estagiou no setor do estudo de caso, NMIL, e com isso foram realizadas entrevistas a fim de entender como funciona todo o processo de marcar uma reunião até ela ser realizada. As entrevistas foram do tipo informal, pois assim foi possível entender melhor o contexto inserido. Esses processos podem ser visualizados nas Figuras \ref{img:modelagemProcessoGeral1Parte1}, \ref{img:modelagemProcessoGeral1Parte2}, \ref{img:modelagemProcessoGeral2Parte1} e \ref{img:modelagemProcessoGeral2Parte2}, que juntam englobam todo o processo do setor envolvendo reuniões, que conta com a presença de diversos participantes de diferentes setores.
 
 Após realizar as entrevistas, foram realizadas observações sobre como os \textit{stakeholders} interagem com o sistema em vigor, e foi constatado que o sistema atual chamado Gertiq (Gerenciador de Tíquetes), ele é usado para marcar reuniões, contudo os participantes são chamados via email pela ferramenta \textit{Outlook}, não possuem um sistema para anotar as pautas e atas das reuniões, sendo feitas hoje a partir de folhas de papel.
 
@@ -26,9 +26,9 @@ Para a elaboração dos requisitos funcionais, foi constatado a necessidade de u
 	\begin{tabular}{|p{3.0cm}|p{12.0cm}|} 
 	\hline
 	\textbf{Usuário} & \textbf{Administrador} \\ \hline
-	\textbf{Descrição} & Usuário que irá ter total controle sobre o sistema e todas as funcionalidades.  \\ \hline
+	\textbf{Descrição} & Usuário que irá ter controle sobre o sistema e todas as funcionalidades.  \\ \hline
 	\textbf{O que ele faz?} & Ele é responsável pela condução das reuniões, documentar as ATAs, apresentar relatórios e pauta das reuniões, acompanhar a evolução dos projetos, e receber \textit{feedbacks} sobre as reuniões. \\ \hline
-	\textbf{O que ele precisa?} & Ele precisa de login e senha para conseguir acessar o sistema. visualizar um ambiente completo com todas as funcionalidades disponíveis no sistema. \\ \hline
+	\textbf{O que ele precisa?} & Ele precisa de usuário e senha para conseguir acessar o sistema. visualizar um ambiente completo com todas as funcionalidades disponíveis no sistema. \\ \hline
 	\end{tabular}
 	 \caption{Usuário Administrador}
 	 \label{tab:usuario_administrador}
@@ -40,7 +40,7 @@ Para a elaboração dos requisitos funcionais, foi constatado a necessidade de u
 	\textbf{Usuário} & \textbf{Participante das Reunioes} \\ \hline
 	\textbf{Descrição} & Usuário que irá acessar o sistema para visualizar a ATA das reuniões que participou. \\ \hline
 	\textbf{O que ele faz?} & Contribui com informações nas reuniões usadas para gerar requisitos do produto. \\ \hline
-	\textbf{O que ele precisa?} & Precisa de login e senha para conseguir acessar o sistema, visualizar as ATAas das reunioes que participou, podendo imprimir, baixar, e deixar comentários. \\ \hline
+	\textbf{O que ele precisa?} & Precisa de usuário e senha para conseguir acessar o sistema, visualizar as ATAas das reunioes que participou, podendo imprimir, baixar, e deixar comentários. \\ \hline
 	\end{tabular}
 	 \caption{Usuário Participante}
 	 \label{tab:usuario_participante}
@@ -68,7 +68,7 @@ As Histórias de Usuário representam as necessidades levantadas pelo usuário, 
 
 \subsubsection{Histórias Técnicas}
 
-As Histórias Técnicas são necessidades levantadas para cumprir questões pontuais que não necessariamente estão ligadas aos requisitos funcionais. Essas histórias podem agregar podem não agregar valor ao produto diretamente. As histórias técnicas deste projeto estão na Tabela \ref{tab:historias_tecnicas}. 
+As Histórias Técnicas são necessidades levantadas para cumprir questões pontuais que não necessariamente estão ligadas aos requisitos funcionais. Essas histórias podem agregar ou não valor ao produto diretamente. As histórias técnicas deste projeto estão na Tabela \ref{tab:historias_tecnicas}. 
 
 \subsection{Requisitos Não-Funcionais}
 
@@ -80,7 +80,7 @@ Os requisitos não-funcionais, explicitados no tópico \ref{sec:requisitos_nao_f
 	\textbf{Requisito} & \textbf{Descrição} \\ \hline
 	\textbf{Usabilidade} & O sistema de gerenciamento de reuniões e ATAs será construído para rodar em ambiente web. Deverá possuir um design responsivo. A interface do sistema deverá se comportar adequadamente independente do \textit{front-end} que será utilizado para o acesso - \textit{Browser, Smartphone} ou \textit{Tablet}. \\ \hline
 	\textbf{Compatibilidade} & O sistema é desenvolvido para ser um sistema web, logo não deve apresentar problemas de compatibilidade entre \textit{browsers}, sendo eles o \textit{Google Chrome, Mozilla Firefox, Microsoft Edge e Safari}. \\ \hline
-	\textbf{Segurança} & O sistema deve garantir a segurança dos dados mais críticos tais como senha dos usuários, cpf e \textit{emails}. \\ \hline
+	\textbf{Segurança} & O sistema deve garantir a segurança dos dados mais críticos tais como senha dos usuários e \textit{emails}. \\ \hline
 	\textbf{Validação} & O sistema deverá validar todos os campos obrigatórios tais como, nome do usuário, senha, nome e descrição da reunião. \\ \hline
 	\textbf{Manutenção e Evolução} & O código deverá seguir padronização pela comunidade de \textit{software}, seguir recomendações de comentários em partes de código mais complexas, para assim facilitar a manutenção e evolução no futuro. \\ \hline
 	\end{tabular}
