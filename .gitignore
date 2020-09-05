@@ -15,9 +15,5 @@ _minted*
 *.brf
 *.dvi
 *.equ
-*.pdf
-*.sigla
-*.odt
-*.vscode/
-tcc.ilg
-tcc.ind
+*.ilg
+*.ind
