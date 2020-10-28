@@ -42,6 +42,8 @@ O Grata foi construido seguindo o modelo do caso de estudo, como explicado no t�
 
 Os administradores podem visualizar mais informações que os participantes, bem como poder editar e excluir coisas que os participantes não podem. Em todo caso, caso algum administrador deseja excluir um setor, que já possui projetos em andamento, será lançada uma mensagem para confirmação da ação, como meio de tentar impedir uma ação erronea.
 
+Todas as informações podem ser inseridas e alteradas, salvo as de reuniões com o status de "Finalizada".
+
 \section{Como Utilizar?}
 
 \subsection{Tela Inicial e Login}
@@ -161,3 +163,40 @@ A lista de setores podem ser vistas por todos os usuários registrados no projet
     \caption{Criar Projeto. Fonte: Própria}
     \label{img:criacao_de_projeto}
 \end{figure}
+
+\subsubsection{Lista de Projetos}
+
+Os projetos são ligados aos setores, sendo somente acessíveis ao acessar o setor. Um projeto pode possuir uma ou várias reuniões, contudo uma reunião está ligada a apenas um projeto, sendo assim uma relação 1:N.
+
+Um projeto recém criado, começa com o status "Pendente", sendo que o administrador pode mudar esse status apenas "Cancelada". O administrador pode adicionar membros aos projetos, bem como remove-los. Pode visualizar os membros do projeto. Esse ponto é importante, pois os membros que irão compor à reunião, devem ser adicionados antes ao projeto.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/lista_de_projetos.png}
+    \caption{Lista de Projetos. Fonte: Própria}
+    \label{img:lista_de_projetos}
+\end{figure}
+
+\subsubsection{Adicionando, Removendo e Visualizando Membros do Projeto}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/adicionando_membros_projeto.png}
+    \caption{Adicionar Membros ao Projeto. Fonte: Própria}
+    \label{img:adicionar_membros_projeto}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/remover_usuarios_projeto.png}
+    \caption{Remover Membros do Projetos. Fonte: Própria}
+    \label{img:remover_membros_projeto}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/membros_do_projeto.png}
+    \caption{Membros do Projetos. Fonte: Própria}
+    \label{img:membros_da_reuniao}
+\end{figure}
+
