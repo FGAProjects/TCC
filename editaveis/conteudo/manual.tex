@@ -36,6 +36,12 @@ No sistema operacional \textit{Ubuntu} e suas derivações, em ambas os projetos
     \item docker-compose up (Para rodar o projeto).
 \end{itemize}
 
+\section{Informações Importantes}
+
+O Grata foi construido seguindo o modelo do caso de estudo, como explicado no tópico \ref{sec:caso_de_estudo}. Desta maneira, para existir uma reunião, deve existir um projeto e um projeto está relacionado diretamente ao setor. Existe então uma questão de dependência.
+
+Os administradores podem visualizar mais informações que os participantes, bem como poder editar e excluir coisas que os participantes não podem. Em todo caso, caso algum administrador deseja excluir um setor, que já possui projetos em andamento, será lançada uma mensagem para confirmação da ação, como meio de tentar impedir uma ação erronea.
+
 \section{Como Utilizar?}
 
 \subsection{Tela Inicial e Login}
@@ -112,7 +118,20 @@ A imagem \ref{img:lista_de_usuarios}, mostra os usuários cadastrados no sistema
 
 A \textit{Navbar} do projeto é diferente para os tipos de usuários, mas em todos os casos, ao passar o \textit{mouse} sobre um item da \textit{Navbar}, uma pequena lista de itens irá aparecer e será clicável.
 
-\subsection{Lista de Setores}
+\subsection{Setores}
+
+\subsubsection{Criação de um Setor}
+
+A imagem \ref{img:criacao_de_setor}, mostra os campos que devem ser preenchidos para criar um setor na ferramenta. \textbf{Obs: apenas os administradores podem criar setores.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/criar_setor.png}
+    \caption{Criar Setor. Fonte: Própria}
+    \label{img:criacao_de_setor}
+\end{figure}
+
+\subsubsection{Lista de Setores}
 
 \begin{figure}[H]
     \centering
@@ -125,7 +144,20 @@ A lista de setores podem ser vistas por todos os usuários registrados no projet
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{figuras/lista_de_setores.png}
+    \includegraphics[width=1.0\textwidth]{figuras/membros_setores.png}
     \caption{Ver Membros do Setor. Fonte: Própria}
     \label{img:ver_membros_setores}
+\end{figure}
+
+\subsection{Projetos}
+
+\textbf{Todos os membros da ferramenta podem visualizar o andamento dos projetos, contudo, os que gerenciar os projetos são os administradores.}
+
+\subsubsection{Criação de Projetos}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/criar_projeto.png}
+    \caption{Criar Projeto. Fonte: Própria}
+    \label{img:criacao_de_projeto}
 \end{figure}
