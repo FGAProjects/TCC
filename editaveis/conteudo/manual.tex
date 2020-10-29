@@ -1,4 +1,5 @@
 \section{Introdução}
+\label{sec:manual}
 
 Seja muito bem vindo ao manual do usuário do Grata (Gerenciador de Reuniões e Atas), a ferramenta que irá te ajudar você, caro gerente de projetos, a melhorar suas reuniões.
 
@@ -42,7 +43,7 @@ O Grata foi construido seguindo o modelo do caso de estudo, como explicado no t�
 
 Os administradores podem visualizar mais informações que os participantes, bem como poder editar e excluir coisas que os participantes não podem. Em todo caso, caso algum administrador deseja excluir um setor, que já possui projetos em andamento, será lançada uma mensagem para confirmação da ação, como meio de tentar impedir uma ação erronea.
 
-Todas as informações podem ser inseridas e alteradas, salvo as de reuniões com o status de "Finalizada".
+Todas as informações podem ser inseridas e alteradas, salvo as de reuniões com o status de "Finalizada". Em alguns momentos, pode ser necessário dá um "\textit{refresh}" na página, para atualizar as informações, isso pode acontecer nos processos de edição e exclusão de algo.
 
 \section{Como Utilizar?}
 
@@ -200,3 +201,128 @@ Um projeto recém criado, começa com o status "Pendente", sendo que o administr
     \label{img:membros_da_reuniao}
 \end{figure}
 
+\subsection{Reuniões}
+
+\subsubsection{Criar Reuniões}
+
+As reuniões só podem ser criadas depois de um projeto e eles devem ser associados. Os tópicos devem ser preenchidos, e toda reunião deve ter um líder, bem como data e horário pré-definidos. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/criar_reuniao.png}
+    \caption{Criar Reunião. Fonte: Própria}
+    \label{img:criar_reuniao}
+\end{figure}
+
+\subsubsection{Lista de Reuniões}
+
+Dentro dos projetos, ficam as reuniões associadas a eles. Todas as reuniões inicialmente começam com o status pendente, como pode ser visto na imagem \ref{img:lista_de_reunioes}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/lista_reunioes.png}
+    \caption{Lista de Reuniões. Fonte: Própria}
+    \label{img:lista_de_reunioes}
+\end{figure}
+
+\subsubsection{Adicionar, Removendo e Visualizando Membros da Reunião}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/adicionando_membros_reuniao.png}
+    \caption{Adicionando Membros à Reunião. Fonte: Própria}
+    \label{img:adicionar_membros_a_reuniao}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/remover_usuarios_reuniao.png}
+    \caption{Removendo Membros da Reunião. Fonte: Própria}
+    \label{img:remover_membros_a_reuniao}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/membros_da_reuniao.png}
+    \caption{Lista de Membros da Reunião. Fonte: Própria}
+    \label{img:membros_da_reuniao}
+\end{figure}
+
+\subsubsection{Itens da Reunião}
+
+Nos itens da reunião, são definidas as regras da reunião e os tópicos. Este é o último ponto do processo antes do status da reunião ser alterado para "Agendada".
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/itens_reuniao.png}
+    \caption{Itens da Reunião. Fonte: Própria}
+    \label{img:itens_da_reuniao}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/reuniao_agendada.png}
+    \caption{Reunião Agendada. Fonte: Própria}
+    \label{img:itens_da_reuniao}
+\end{figure}
+
+Quando a reunião muda para o status de "Agendada", não se pode mais alterar os dados nela.
+
+\subsubsection{Reunião Agendada}
+
+Com a reunião agendada, o gerente pode clicar no botão "Começar a Reunião". O sistema irá para a página da imagem \ref{img:informacoes_reuniao}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/informacoes_reuniao.png}
+    \caption{Informações da Reunião. Fonte: Própria}
+    \label{img:informacoes_reuniao}
+\end{figure}
+
+Na imagem \ref{img:informacoes_reuniao}, se tem todas as informações referentes a esta reunião, bem como quatro botões: "Começar Reunião", "Parar Contador", "Reiniciar Contador", "Finalizar Reunião".
+
+Quando o usuário aperta o botão "Finalizar Reunião", o sistema muda o status da reunião para "Finalizada" e desbloqueando as opções "Visualizar Ata" e "Novo Questionário". 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/reuniao_finalizada.png}
+    \caption{Reunião Finalizada. Fonte: Própria}
+    \label{img:reuniao_finalizada}
+\end{figure}
+
+\subsection{Visualizar Ata}
+
+A ata de uma reunião mostra os tópicos que foram debatidos, bem como os participantes, horário de início e término da reunião. Essas informações podem ser visualizadas na imagem \ref{img:ata_reuniao}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/visualizar_ata.png}
+    \caption{Ata da Reunião. Fonte: Própria}
+    \label{img:ata_reuniao}
+\end{figure}
+
+\subsection{Questionário}
+
+O questionário possui o objetivo do gerente visualizar se os envolvidos com o projeto possuem dúvidas, e caso tenham que elas possam ser resolvidas logo. Um exemplo de questionário pode ser visto na imagem \ref{img:questionario_reuniao}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/questionario_reuniao.png}
+    \caption{Questionário da Reunião. Fonte: Própria}
+    \label{img:questionario_reuniao}
+\end{figure}
+
+\subsubsection{Responder Questionário}
+
+Os participantes da reunião são os que podem responder os questionários, bem como ao final deste, dá uma nota para reunião. Isso faz parte do feedback dos participantes em relação a reunião ministrada pelo gerente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figuras/avaliacao_reuniao.png}
+    \caption{Avaliação da Reunião. Fonte: Própria}
+    \label{img:avaliacao_reuniao}
+\end{figure}
+
+\subsection{Comentários}
+
+Os comentários fazem parte do feedback dos participantes em relação a reunião, então é possível ao final da reunião serem colocados comentários sobre a reunião.
